@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="Conan-RootDirs">
+    <Conan-glm-Root>$(USERPROFILE)/.conan/data/glm/0.9.9.1/g-truc/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9</Conan-glm-Root>
+    <Conan-parallelstl-Root>$(USERPROFILE)/.conan/data/parallelstl/20181004/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9</Conan-parallelstl-Root>
+    <Conan-TBB-Root>$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7</Conan-TBB-Root>
+  </PropertyGroup>
+  <PropertyGroup Label="ConanVariables">
+    <ConanBinaryDirectories>$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/bin;</ConanBinaryDirectories>
+    <ConanResourceDirectories></ConanResourceDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/bin;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(USERPROFILE)/.conan/data/glm/0.9.9.1/g-truc/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/parallelstl/20181004/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__PSTL_USE_TBB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tbb.lib;tbbmalloc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>$(USERPROFILE)/.conan/data/glm/0.9.9.1/g-truc/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/parallelstl/20181004/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(USERPROFILE)/.conan/data/glm/0.9.9.1/g-truc/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/parallelstl/20181004/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include;$(USERPROFILE)/.conan/data/TBB/2019_U1/conan/stable/package/6cc50b139b9c3d27b3e9042d5f5372d327b3a9f7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__PSTL_USE_TBB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
