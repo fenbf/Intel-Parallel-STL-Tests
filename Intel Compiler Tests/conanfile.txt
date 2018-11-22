@@ -1,6 +1,7 @@
 [requires]
 glm/0.9.9.1@g-truc/stable
 parallelstl/20181004@conan/stable 
+google-benchmark/1.4.1@mpusz/stable
 
 [generators]
 visual_studio
